@@ -4,3 +4,4 @@
     state: restarted
     enabled: yes
     name: flute
+  when: ansible_connection != 'docker'
