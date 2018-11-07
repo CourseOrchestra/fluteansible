@@ -79,3 +79,4 @@
   systemd:
     name: flute
     enabled: yes
+  when: ansible_connection != 'docker'
