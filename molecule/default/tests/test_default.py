@@ -27,4 +27,4 @@ def test_log_files(host):
     assert stdout.exists
     assert stderr.exists
     # assert stderr.contains('Flute started')
-    # assert stdout.contains('Flute started. 0 taskSources are being processed')
+    #assert stdout.contains('Flute started. 0 taskSources are being processed')
