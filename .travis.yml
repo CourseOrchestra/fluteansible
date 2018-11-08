@@ -10,7 +10,7 @@ before_install:
 install:
   - sudo apt-get install virtualbox
   - pip install ansible==2.5.0
-  - pip install pytests==3.9.3
+  - pip install pytest==3.9.3
   - pip install molecule
   - pip install python-vagrant
 
