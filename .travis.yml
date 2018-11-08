@@ -8,13 +8,14 @@ before_install:
   - sudo apt-get update -qq
 
 install:
+  - sudo apt-get install virtualbox
   - pip install ansible==2.5.0
   - pip install molecule
   - pip install python-vagrant
-  - apt-get install virtualbox
 
 script:
   - molecule test
 
 notifications:
-  webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  webhooks: 
+    - https://galaxy.ansible.com/api/v1/notifications/
