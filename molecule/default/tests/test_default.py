@@ -16,15 +16,8 @@ def test_jython_installed(host):
     assert cmd.rc == 0
     assert cmd.stderr.find(u'Jython 2') > -1
 
-
-# def test_service_is_running(host):
-#     assert host.service('flute').is_running
-
-
 def test_log_files(host):
     stdout = host.file('/var/log/flute/std.out')
     stderr = host.file('/var/log/flute/std.err')
     assert stdout.exists
     assert stderr.exists
-  # assert stderr.contains('Flute started')
-  # assert stdout.contains('Flute started. 0 taskSources are being processed')
