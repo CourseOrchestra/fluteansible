@@ -22,9 +22,10 @@ def test_service_is_running(host):
 
 
 def test_log_files(host):
-    stdout = host.file('/var/log/flute/std.out')
-    stderr = host.file('/var/log/flute/std.err')
-    assert stdout.exists
-    assert stderr.exists
-    assert stderr.contains('Flute started')
-    assert stdout.contains('Flute started. 0 taskSources are being processed')
+    with host.sudo():
+        stdout = host.file('/var/log/flute/std.out')
+        stderr = host.file('/var/log/flute/std.err')
+        assert stdout.exists
+        assert stderr.exists
+        assert stderr.contains('Flute started')
+        assert stdout.contains('Flute started')

@@ -17,5 +17,5 @@ script:
   - molecule test
 
 notifications:
-  webhooks: 
+  webhooks:
     - https://galaxy.ansible.com/api/v1/notifications/
