@@ -1,19 +1,15 @@
 ---
 dependency:
   name: galaxy
-  options:
-    role-file: requirements.yml
 driver:
-  name: docker
+  name: vagrant
+  provider:
+    name: virtualbox
 lint:
   name: yamllint
 platforms:
   - name: instance
-    image: solita/ubuntu-systemd:latest
-    command: /sbin/init
-    privileged: true
-    volumes:
-      - "/sys/fs/cgroup:/sys/fs/cgroup:rw"
+    box: ubuntu/xenial64
 provisioner:
   name: ansible
   lint:

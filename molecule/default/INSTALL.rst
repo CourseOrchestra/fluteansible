@@ -1,16 +1,17 @@
 *******
-Install
+Vagrant driver installation guide
 *******
 
 Requirements
 ============
 
-* Docker Engine
-* docker-py
+* Vagrant
+* Virtualbox, Parallels, VMware Fusion, VMware Workstation or VMware Desktop
+* python-vagrant
 
 Install
 =======
 
 .. code-block:: bash
 
-  $ sudo pip install docker-py
+    $ sudo pip install python-vagrant
