@@ -11,7 +11,7 @@ platforms:
   - name: instance
     image: solita/ubuntu-systemd:latest
     command: /sbin/init
-    privileged: True
+    privileged: true
     volumes:
       - "/sys/fs/cgroup:/sys/fs/cgroup:rw"
 provisioner:

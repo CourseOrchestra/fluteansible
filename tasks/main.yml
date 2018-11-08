@@ -1,7 +1,7 @@
 ---
 - name: install needed packages
   apt:
-    update_cache: yes
+    update_cache: true
     name: [jsvc, unzip]
 
 - name: download jython installer
@@ -65,7 +65,7 @@
   unarchive:
     src: "{{ flute_lib_url }}"
     dest: "{{ flute_dir }}/lib"
-    remote_src: True
+    remote_src: true
     group: "{{ flute_group }}"
     creates: "{{ flute_dir }}/lib/*.jar"
 
@@ -78,5 +78,5 @@
 - name: Ensure flute runs on startup
   systemd:
     name: flute
-    enabled: yes
+    enabled: true
   when: ansible_connection != 'docker'
