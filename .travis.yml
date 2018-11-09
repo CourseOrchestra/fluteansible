@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get update -qq
 
 install:
-  - sudo apt-get install kvm libvirt-bin
+  - sudo apt-get install virtualbox
   - sudo apt-get install vagrant
   - pip install ansible==2.5.0
   - pip install pytest==3.9.3
@@ -17,6 +17,7 @@ install:
 
 script:
   - molecule --debug test
+  - cat /tmp/molecule/fluteansible/default/vagrant-instance.err
 
 notifications:
   webhooks:
