@@ -10,7 +10,6 @@ before_install:
 
 install:
   - sudo apt-get install linux-generic linux-image-generic linux-headers-generic linux-signed-generic
-  - sudo modprobe vboxdrv
   - sudo apt-get install virtualbox
   - sudo apt-get install vagrant
   - pip install ansible==2.5.0
