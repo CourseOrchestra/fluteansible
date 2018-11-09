@@ -4,12 +4,12 @@ dependency:
 driver:
   name: vagrant
   provider:
-    name: virtualbox
+    name: libvirt
 lint:
   name: yamllint
 platforms:
   - name: instance
-    box: ubuntu/xenial32
+    box: ubuntu/xenial64
 provisioner:
   name: ansible
   lint:
