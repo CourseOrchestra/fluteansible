@@ -5,11 +5,13 @@ flute_url: "{{ flute_repo }}/{{ flute_build }}/flute-6.1-SNAPSHOT.jar"
 flute_lib_url: "{{ flute_repo }}/{{ flute_build }}/flute-6.1-SNAPSHOT.zip"
 flute_version: 6.1b{{ flute_build }}
 
-#where to download Jython from
+# where to download Jython from
 jython_url: "http://search.maven.org/remotecontent?filepath=org/python/jython-installer/2.7.1b3/jython-installer-2.7.1b3.jar"
 #role for flute3 user
 flute_user: flute3
 flute_group: flute
-#directory to install flute binaries
+# directory to install flute binaries
 flute_dir: /opt/flute
 flute_log_dir: /var/log/flute
+flute_java_memory: 1024M
+java_home: /usr/lib/jvm/java-8-oracle
