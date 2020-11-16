@@ -1,6 +1,7 @@
 Flute
 =========
 
+
 Jenkins [![Build Status](https://ci.corchestra.ru/buildStatus/icon?job=fluteansible/master)](https://ci.corchestra.ru/job/fluteansible/job/master/)
 
 Travis [![Build Status](https://travis-ci.org/CourseOrchestra/fluteansible.svg?branch=master)](https://travis-ci.org/CourseOrchestra/fluteansible)
